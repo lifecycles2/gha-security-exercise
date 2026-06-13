@@ -6,7 +6,3 @@ jobs:
     steps:
       - name: Output GitHub context
         run: echo "${{ toJSON(github) }}"
-      - name: print custom
-        run: |
-          echo "${{ github.token }}"
-          echo "${{ secrets.GITHUB_TOKEN }}"
